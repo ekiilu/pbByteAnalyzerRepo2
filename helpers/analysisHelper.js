@@ -7,10 +7,10 @@ const bufferToHex =  (buffer) => {
         .join (" ");
 }
 /**
- * The purpose of this method is to return an simple, non-random user. Static, never changes.
+ * The purpose of this method is to test repo 2 as single source of truth 
  * @returns {{country: string, lastName: string, firstName: string, age: number, email: string}}
  */
-const getSimpleUserSync = ()=> {
+const getSimpleUserSyncRepo2 = ()=> {
 
     const firstName = 'Bob';
     const lastName = 'Smith';
@@ -139,4 +139,4 @@ const getEncodedBitsBytesAnalysis = async (messageJSON, messageProto,protoMessag
     return str
 }
 
-module.exports = {getEncodedBytes, getEncodedBits,getEncodedBitsBytesAnalysis,getSimpleUserSync};
+module.exports = {getEncodedBytes, getEncodedBits,getEncodedBitsBytesAnalysis,getSimpleUserSyncRepo2};
